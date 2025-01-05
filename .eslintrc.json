@@ -1,16 +1,12 @@
 {
-  "extends": "next/core-web-vitals",
-  "rules": {
-    "react/no-unescaped-entities": "off",
-    "@typescript-eslint/quotes": "off",
-    "quotes": [0],
-    "avoidEscape": 0,
-    "allowTemplateLiterals": 0,
-    "no-useless-escape": 0
-    
+  "compilerOptions": {
+    "strict": true,
+    "target": "ES6",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictNullChecks": true
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> d0d4bb749273d3d792614b0bf9b0b9bc20094f0b
