@@ -9,7 +9,6 @@
     "forceConsistentCasingInFileNames": true,
     "strictNullChecks": true,
     "isolatedModules": true,
-    "allowJs": true,
     "resolveJsonModule": true,
     "outDir": "./dist",
     "rootDir": "./src"

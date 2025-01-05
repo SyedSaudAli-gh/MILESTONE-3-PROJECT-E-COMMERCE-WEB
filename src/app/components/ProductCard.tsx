@@ -18,6 +18,8 @@ const ProductCard: React.FC<ProductCardProps> = ({
       <Image
         src={imageUrl}
         alt={name}
+        width={300}
+        height={200}
         className="w-full h-56 object-cover rounded-md mb-4 transform transition-all duration-300 ease-in-out hover:scale-110"
       />
       <h3 className="text-xl font-semibold mb-2">{name}</h3>
@@ -25,7 +27,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
       <button
         onClick={() => onAddToCart({ id, name, price, imageUrl })}
-        className="bg-blue-600 text-white px-4 opacity-80 hover:opacity-100 rounded-lg text-lg shadow-md hover:bg-blue-700 transition duration-300 ease-in-out"
+        className="bg-blue-600 text-white px-4 py-2 opacity-80 hover:opacity-100 rounded-lg text-lg shadow-md hover:bg-blue-700 transition duration-300 ease-in-out"
       >
         Add To Cart
       </button>
