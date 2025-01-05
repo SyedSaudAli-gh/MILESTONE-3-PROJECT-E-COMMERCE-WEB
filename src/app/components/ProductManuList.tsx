@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-// import { useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import ProductCard from "./ProductCard";
-import { Product } from "@/types/Product";
+import { Product } from "@/pages/Types";
 import { MdOutlineShoppingBag } from "react-icons/md";
 
 const ProductManuList = () => {
@@ -12,7 +12,7 @@ const ProductManuList = () => {
   const [cart, setCart] = useState<Product[]>([]);
   const [showCart, setShowCart] = useState(false);
   const [isCheckout, setIsCheckout] = useState(false);
-  // const router = useRouter();
+  const router = useRouter();
 
   // Fetch products from API
   useEffect(() => {
